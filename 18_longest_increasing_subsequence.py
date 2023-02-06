@@ -15,7 +15,7 @@ print(a.lengthOfLIS([7,7,7,7,7,7,7]))
 '''
 This is using patience sort that takes O(nlogn) time, where the previous dynamic approach runs on O(n^2)
 class Solution(object):
-    def lengthOfLIS(self, nums):
+    def lengthOfLIS(self, nums: list[int]) -> int:
         sub = []
         for x in nums:
             if len(sub) == 0 or sub[-1] < x:
