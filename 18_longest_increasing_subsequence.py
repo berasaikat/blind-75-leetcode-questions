@@ -11,3 +11,17 @@ a = Solution()
 print(a.lengthOfLIS([10,9,2,5,3,7,101,18]))
 print(a.lengthOfLIS([0,1,0,3,2,3]))
 print(a.lengthOfLIS([7,7,7,7,7,7,7]))
+
+'''
+This is using patience sort that takes O(nlogn) time, where the previous dynamic approach runs on O(n^2)
+class Solution(object):
+    def lengthOfLIS(self, nums):
+        sub = []
+        for x in nums:
+            if len(sub) == 0 or sub[-1] < x:
+                sub.append(x)
+            else:
+                idx = bisect_left(sub, x)
+                sub[idx] = x
+        return len(sub)
+'''
