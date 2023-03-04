@@ -1,5 +1,5 @@
 class Solution(object):
-    def numDecodings(self, s):
+    def numDecodings(self, s: str) -> int:
         dp = {len(s) : 1}
         def dfs(i):
             if i in dp:
