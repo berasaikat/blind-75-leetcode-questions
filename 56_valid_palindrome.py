@@ -21,6 +21,11 @@ class Solution(object):
                 ord("a") <= ord(c) <= ord("z") or
                 ord("0") <= ord(c) <= ord("9"))
 
+a = Solution()
+print(a.isPalindrome("A man, a plan, a canal: Panama"))
+print(a.isPalindrome("race a car"))
+print(a.isPalindrome(" "))
+
 '''
 class Solution(object):
     def isPalindrome(self, s):
