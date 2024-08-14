@@ -43,3 +43,7 @@ class Solution(object):
             for c in range(cols):
                 dfs(r, c, root, "")
         return list(result)
+    
+a = Solution()
+print(a.findWords([["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], ["oath","pea","eat","rain"]))
+print(a.findWords([["a","b"],["c","d"]], ["abcb"]))
